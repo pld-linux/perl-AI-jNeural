@@ -17,6 +17,7 @@ Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	0f6ffe4b60bd7d82bd7aafcfc3b96d36
 BuildRequires:	flex
 BuildRequires:	jneural-devel
 BuildRequires:	perl-devel >= 5.6

@@ -8,8 +8,8 @@
 #%endif
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	AI
-%define	pnam	jNeural
+%define		pdir	AI
+%define		pnam	jNeural
 Summary:	AI::jNeural::arch - the Jet's Neural Architecture base module
 Summary(pl):	AI::jNeural::arch - podstawowy modu³ Jet's Neural Architecture
 Name:		perl-AI-jNeural
@@ -27,7 +27,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This particular module doesn't actually do anything.  It would be the
+This particular module doesn't actually do anything. It would be the
 place to look for functions that are general to the entire library,
 but there really aren't any yet.
 

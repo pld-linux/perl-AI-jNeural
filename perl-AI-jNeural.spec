@@ -43,7 +43,7 @@ ma.
 %build
 find -type f | xargs perl -pi -e 's,/usr/local,/usr,g'
 %{__perl} Makefile.PL skip_stuff \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{!?_without_tests:%{__make} test}
 

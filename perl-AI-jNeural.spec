@@ -2,9 +2,10 @@
 # Conditional build:
 %bcond_without	tests # don't perform "make test"
 #
-%ifarch ppc
-%define		_without_tests	1
-%endif
+# please, check it again 
+#%ifarch ppc
+#%%undefine	with_tests
+#%endif
 
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	AI

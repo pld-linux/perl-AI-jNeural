@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests # don't perform "make test"
 #
 %ifarch ppc
 %define		_without_tests	1
@@ -22,9 +22,7 @@ BuildRequires:	flex
 BuildRequires:	jneural-devel
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{?_without_tests:0}%{!?_without_tests:1}
-BuildRequires:	perl-Math-Business-SMA
-%endif
+%{?with_tests:BuildRequires:	perl-Math-Business-SMA}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -45,7 +43,7 @@ find -type f | xargs perl -pi -e 's,/usr/local,/usr,g'
 %{__perl} Makefile.PL skip_stuff \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

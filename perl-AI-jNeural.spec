@@ -61,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_sitearch}/auto/AI
 %dir %{perl_sitearch}/auto/AI/jNeural
 # empty autosplit.ix files
-#%{perl_sitearch}/auto/AI/jNeural/*.ix
-#%{perl_sitearch}/auto/AI/jNeural/*/*.ix
-#%{perl_sitearch}/auto/AI/jNeural/*/*/*.ix
+#%%{perl_sitearch}/auto/AI/jNeural/*.ix
+#%%{perl_sitearch}/auto/AI/jNeural/*/*.ix
+#%%{perl_sitearch}/auto/AI/jNeural/*/*/*.ix
 %{perl_sitearch}/auto/AI/jNeural/*.bs
 %{perl_sitearch}/auto/AI/jNeural/*/*/*.bs
 %attr(755,root,root) %{perl_sitearch}/auto/AI/jNeural/*.so

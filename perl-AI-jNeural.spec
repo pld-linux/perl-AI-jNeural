@@ -8,8 +8,8 @@
 #%endif
 
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	AI
-%define		pnam	jNeural
+%define	pdir	AI
+%define	pnam	jNeural
 Summary:	AI::jNeural::arch - the Jet's Neural Architecture base module
 Summary(pl):	AI::jNeural::arch - podstawowy modu³ Jet's Neural Architecture
 Name:		perl-AI-jNeural

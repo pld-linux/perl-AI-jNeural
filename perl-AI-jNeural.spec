@@ -2,25 +2,28 @@
 %define	pdir	AI
 %define	pnam	jNeural
 Summary:	AI::jNeural::arch - The Jet's Neural Architecture base module
+Summary(pl):	AI::jNeural::arch - podstawowy modu³ Jet's Neural Architecture
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.52
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+BuildRequires:	flex
+BuildRequires:	jneural-devel
 BuildRequires:	perl >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-26
-BuildRequires:	flex jneural-devel
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This particular module doesn't actually do anything.  It would be the
 place to look for functions that are general to the entire library,
-but there really arn't any yet.
+but there really aren't any yet.
 
-# %description -l pl
-# szkoda zachodu
+%description -l pl
+Ten modu³ nie robi w³a¶ciwie niczego. Ma byæ miejscem do szukania
+funkcji, które s± ogólne dla ca³ej biblioteki, ale takich jeszcze nie
+ma.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

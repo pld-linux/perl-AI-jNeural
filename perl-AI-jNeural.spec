@@ -41,7 +41,7 @@ ma.
 
 %build
 find -type f | xargs perl -pi -e 's,/usr/local,/usr,g'
-perl Makefile.PL skip_stuff
+%{__perl} Makefile.PL skip_stuff
 %{__make}
 %{!?_without_tests:%{__make} test}
 

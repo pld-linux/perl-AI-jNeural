@@ -14,7 +14,7 @@ Summary(pl):	AI::jNeural::arch - podstawowy modu³ Jet's Neural Architecture
 Name:		perl-AI-jNeural
 Version:	0.53
 Release:	2
-License:	GPL/Artistic
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0f6ffe4b60bd7d82bd7aafcfc3b96d36

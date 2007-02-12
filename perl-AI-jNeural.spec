@@ -11,7 +11,7 @@
 %define		pdir	AI
 %define		pnam	jNeural
 Summary:	AI::jNeural::arch - the Jet's Neural Architecture base module
-Summary(pl):	AI::jNeural::arch - podstawowy modu≥ Jet's Neural Architecture
+Summary(pl.UTF-8):   AI::jNeural::arch - podstawowy modu≈Ç Jet's Neural Architecture
 Name:		perl-AI-jNeural
 Version:	0.53
 Release:	3
@@ -31,9 +31,9 @@ This particular module doesn't actually do anything. It would be the
 place to look for functions that are general to the entire library,
 but there really aren't any yet.
 
-%description -l pl
-Ten modu≥ nie robi w≥a∂ciwie niczego. Ma byÊ miejscem do szukania
-funkcji, ktÛre s± ogÛlne dla ca≥ej biblioteki, ale takich jeszcze nie
+%description -l pl.UTF-8
+Ten modu≈Ç nie robi w≈Ça≈õciwie niczego. Ma byƒá miejscem do szukania
+funkcji, kt√≥re sƒÖ og√≥lne dla ca≈Çej biblioteki, ale takich jeszcze nie
 ma.
 
 %prep

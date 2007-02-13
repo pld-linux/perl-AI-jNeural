@@ -11,7 +11,7 @@
 %define		pdir	AI
 %define		pnam	jNeural
 Summary:	AI::jNeural::arch - the Jet's Neural Architecture base module
-Summary(pl.UTF-8):   AI::jNeural::arch - podstawowy moduł Jet's Neural Architecture
+Summary(pl.UTF-8):	AI::jNeural::arch - podstawowy moduł Jet's Neural Architecture
 Name:		perl-AI-jNeural
 Version:	0.53
 Release:	3

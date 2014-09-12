@@ -66,8 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 #%%{perl_vendorarch}/auto/AI/jNeural/*.ix
 #%%{perl_vendorarch}/auto/AI/jNeural/*/*.ix
 #%%{perl_vendorarch}/auto/AI/jNeural/*/*/*.ix
-%{perl_vendorarch}/auto/AI/jNeural/*.bs
-%{perl_vendorarch}/auto/AI/jNeural/*/*/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/AI/jNeural/*.so
 %attr(755,root,root) %{perl_vendorarch}/auto/AI/jNeural/*/*/*.so
 %dir %{perl_vendorarch}/auto/AI/jNeural/arch

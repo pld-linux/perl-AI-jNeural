@@ -2,14 +2,14 @@
 # Conditional build:
 %bcond_without	tests # don't perform "make test"
 #
-# please, check it again 
+# please, check it again
 #%ifarch ppc
 #%%undefine	with_tests
 #%endif
 
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	AI
 %define		pnam	jNeural
+%include	/usr/lib/rpm/macros.perl
 Summary:	AI::jNeural::arch - the Jet's Neural Architecture base module
 Summary(pl.UTF-8):	AI::jNeural::arch - podstawowy moduł Jet's Neural Architecture
 Name:		perl-AI-jNeural
@@ -19,11 +19,12 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0f6ffe4b60bd7d82bd7aafcfc3b96d36
+URL:		http://search.cpan.org/dist/AI-jNeural/
 BuildRequires:	flex
 BuildRequires:	jneural-devel
+%{?with_tests:BuildRequires:	perl-Math-Business-SMA}
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%{?with_tests:BuildRequires:	perl-Math-Business-SMA}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
